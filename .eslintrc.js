@@ -10,7 +10,8 @@ module.exports = {
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'camelcase': ['error', { allow: ['hair_color', 'skin_color', 'eye_color', 'birth_year'] }]
   },
   parserOptions: {
     parser: '@typescript-eslint/parser'
